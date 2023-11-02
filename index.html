@@ -49,24 +49,222 @@
             height: 100%;
         }
 
-        h1 {
+        h1,
+        h2 {
             color: var(--third-color);
+            font-family: var(--third-font);
             margin-top: 3rem;
             text-align: center;
         }
 
-        .container {
-            border: solid white 2px;
-            background: var(--fourth-color);
-            max-width: 1000px;
+        img {
+            width: 100%;
+            max-height: 100%;
+        }
 
+        footer {
+            box-shadow: 0px -5px 12px rgba(0, 0, 0, 0.1);
+            padding: 2rem 0;
+        }
+
+        .container {
+            max-width: 1100px;
+            overflow-x: hidden;
+            margin: 0 auto;
+            background-color: var(--primary-color);
+        }
+
+        .container-fluid {
+            padding: 0 3rem;
+        }
+
+        #parallax-container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .kameron-parallax h1 {
+            text-shadow: var(--text-shadow);
+            color: var(--third-color);
+            font-size: 5rem;
+            padding-left: 2rem;
+            animation: animate_title 3s linear;
+        }
+
+        @keyframes animate_title {
+            0% {
+                margin-bottom: -50px;
+                letter-spacing: 100px;
+                color: var(--primary-color);
+            }
+
+            50% {
+                margin-bottom: -50px;
+                letter-spacing: 1px;
+                color: var(--third-color);
+            }
+
+            95% {
+                margin-bottom: -50px;
+            }
+
+            100% {
+                margin-bottom: -50px;
+            }
+        }
+
+        .kameron-parallax {
+            background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/643/original/Serrano_Torres.jpg?1698930519) no-repeat center;
+            background-size: 80%;
+            background-attachment: fixed;
+            background-clip: content-box;
+            height: 90vh;
+        }
+
+        .lines {
+            margin: 10rem 0;
+        }
+
+        .kameron-parallax-2 {
+            background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/649/original/IMG_6689.jpeg?1698930834) no-repeat center;
+            background-size: contain;
+            background-attachment: fixed;
+            height: 70vh;
+        }
+
+        .parallax-grid {
+            color: var(--third-color);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 100%;
+            margin-bottom: 3rem;
+            padding-top: 10rem;
+            text-align: center;
+        }
+
+        .parallax-links {
+            border: solid 2px transparent;
+            color: var(--third-color);
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            padding: 5px;
+            text-decoration: none;
+            transition: all 100ms ease-in-out;
+        }
+
+        .parallax-links:hover {
+            border: solid 2px rgba(255, 255, 255, 0.4);
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .social-links {
+            padding-right: 1rem;
+            text-align: center;
+            flex-direction: row;
+        }
+
+        .social-links a {
+            font-size: 25px;
+            margin: 0 20px;
+            padding: 5px 10px;
+            color: var(--third-color);
+            border: var(--third-color) solid 1px;
+            background-color: var(--primary-color);
+            border-radius: 50px;
+            transition: all 100ms ease-in-out;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+            background-color: var(--third-color);
+        }
+
+        .footer-links {
+            color: var(--third-color);
+        }
+
+        .credit {
+            color: var(--third-color);
+            font-size: small;
+            padding-top: 2rem;
+            text-align: center;
+        }
+
+        .credit a {
+            color: var(--third-color);
+            text-decoration: none;
+        }
+
+        .credit a:hover {
+            text-decoration: underline;
+            transition: all 100ms ease-in-out;
+        }
+
+        .id-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .id-grid img {
+            max-width: 50%;
+        }
+
+        @media (max-width: 787px) {
+            .parallax-grid {
+                display: hidden;
+                background: none;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .parallax-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                padding-top: 0;
+            }
+
+            .kameron-parallax {
+                background-size: 100%;
+                background-attachment: scroll;
+                height: 50vh;
+                padding: 0;
+            }
+
+            .kameron-parallax h1 {
+                font-size: 3rem;
+            }
+
+            .kameron-parallax-2 {
+                background-attachment: scroll;
+                height: 50vh;
+            }
+
+            .lines {
+                margin: 0;
+            }
+        }
+
+        @media (max-width: 390px) {
+            .parallax-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            .kameron-parallax {
+                background-size: 100%;
+            }
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1>My Coding Journey</h1>
+        <h2>My Coding Journey</h2>
         <div id="parallax-container">
             <div class="kameron-parallax">
                 <h1 class="greeting">Kameron<div class="last-name">Locke</div>
@@ -76,28 +274,33 @@
     </div>
 
     <section class="lines">
-        <img src="/images/lines.jpeg" alt="lines">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/641/original/lines.jpeg?1698929127"
+            alt="lines">
     </section>
 
     <div class="kameron-parallax-2"></div>
     <div class="container-fluid">
         <div class="parallax-grid">
-            <div class="parallax-box-1"><img class="pb-3" src="/images/image-7.jpg" alt="Gaban" title="GABAN">
+            <div class="parallax-box-1 "><img class="pb-3"
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/646/original/Front_end_Certificate.jpeg?1698930654"
+                    alt="Gaban" title="GABAN">
                 <a class="parallax-links" href="/inter-disciplinary.html" title=" Kam's LinkedIn">
                     Inter-disciplinary
                 </a>
 
             </div>
-            <div class="parallax-box-2"><img class="pb-3" src="/images/black-reels.png" alt="Black Reels"
-                    title="THE BLACK REELS FILM FESTIVAL">
+            <div class="parallax-box-2"><img class="pb-3"
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/664/original/Celia's_Site.jpeg?1698933747"
+                    alt="Black Reels" title="THE BLACK REELS FILM FESTIVAL">
                 <a class="parallax-links" href="/inter-disciplinary.html" title=" Kam's LinkedIn">
                     Social & Cultural
                 </a>
             </div>
-            <div class="parallax-box-3"><img class="pb-3" src="/images/the-decolonial-earth-3.jpeg" alt="Research"
-                    title="THE DECOLONIAL EARTH">
-                <a class="parallax-links" href="/inter-disciplinary.html" title=" Kam's LinkedIn">
-                    Researcher & Educator
+            <div class="parallax-box-3"><img class="pb-3"
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/665/original/Three_Gloves.jpeg?1698933763"
+                    alt="Research" title="THE GLOVES">
+                <a class="parallax-links" href="https://www.threegloves.com/" title="Three Gloves Company">
+                    Three Gloves Websites
                 </a>
             </div>
         </div>
