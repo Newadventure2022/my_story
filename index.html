@@ -75,14 +75,11 @@
             padding: 2rem 0;
         }
 
-        .container {
+        .container-fluid {
             max-width: 1100px;
             overflow-x: hidden;
             margin: 0 auto;
             background-color: var(--primary-color);
-        }
-
-        .container-fluid {
             padding: 0 3rem;
         }
 
@@ -249,18 +246,6 @@
             transition: all 100ms ease-in-out;
         }
 
-        .id-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1rem;
-            max-width: 100%;
-            margin: 0 auto;
-        }
-
-        .id-grid img {
-            max-width: 50%;
-        }
-
         .grid-photos {
             font-size: 24px;
         }
@@ -273,6 +258,14 @@
         }
 
         @media (max-width: 500px) {
+            h2 {
+                font-size: 2rem;
+            }
+
+            .container-fluid {
+                padding: 0 1rem;
+            }
+
             .parallax-grid {
                 display: grid;
                 grid-template-columns: 1fr;
@@ -281,7 +274,7 @@
 
             .celia-parallax {
                 background-size: 100%;
-                background-attachment: scroll;
+                background-attachment: fixed;
                 height: 50vh;
                 padding: 0;
             }
@@ -314,7 +307,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <h2>My Coding Journey</h2>
         <h3>by</h3>
         <div id="parallax-container">
@@ -323,16 +316,16 @@
                 </h1>
             </div>
         </div>
-        <p class="mt-5">I was manger at <a class="traderJoes-link" href="https://www.shecodes.io"
+        <p class="mt-5">I was a manager at <a class="traderJoes-link" href="https://www.shecodes.io"
                 title="Link to Trader Joe's" target="_blank">
                 Trader Joe’s</a>, a popular grocery store in the USA. It was a good job, but I
             wanted to do
             something more
-            fulfilling. I wanted to build a career. My husband James kept telling me I should trying coding because I
+            fulfilling. I wanted to build a career. My husband James kept telling me I should try coding because I
             have the brain
             for it. I did not consider it because I was already studying to get a degree in Business Management, and I
             was working
-            full time at Trader Joe’s.</p>
+            full-time at Trader Joe’s.</p>
         <p>When the pandemic hit California in 2020, everything changed. Working at Trader Joe’s was extremely
             stressful. While
             many people were allowed to work from home, that option was not available for me as a store manager. I had
@@ -346,15 +339,15 @@
             alt="lines">
     </section>
     <div class="container-fluid">
-        <p>One day James, and I were talking about how we needed to make a change. We decided we would move to Spain. We
+        <p>One day James and I were talking about how we needed to make a change. We decided we would move to Spain. We
             had
-            planned on making the move in 5-10 years, but now that the pandemic hit, we were ready to go. James could
-            keep him job
-            and move abroad. I had to think of a new career. I decided on teaching English as a second language, which
+            planned on making the move in 5-10 years, but since the pandemic hit, we were ready to go. James could
+            keep his job
+            and move abroad. I had to think of a new career. I decided to teach English as a second language, which
             meant I
             needed to study for my TEFL certification. I found the <a class="tefl-link" href="https://www.shecodes.io"
                 title="Link to International TEFL Academy" target="_blank">
-                International Tefl Academy</a>, and began the year long
+                International Tefl Academy</a>, and began the year-long
             process of
             getting certified. I received my certificate in December of 2020.</p>
         <p class="pb-5">
@@ -373,9 +366,9 @@
                 enter Spain!! That was the sign I was looking for since my birthday is on June 7th.
             </p>
             <p>
-                We decided on leaving California on August 16, 2021. We sold almost everything we owned, gave tons of
+                We decided to leave California on August 16, 2021. We sold almost everything we owned, gave tons of
                 stuff away
-                (including my Volkswagen Beetle to my mother) and said our goodbyes to our dear friends.
+                (including my Volkswagen Beetle to my mother), and said our goodbyes to our dear friends.
 
                 We arrived in Madrid on August 17, 2020. We could not believe we actually did it! We moved to Spain!!!!
             </p>
@@ -406,7 +399,7 @@
             <p>
                 After a few weeks of getting settled and finding a new apartment to live it was time to get to business.
                 I needed to get
-                my Spanish Residency in order to work. The process took over two year (again, that is a story for
+                my Spanish Residency to work. The process took over two years (again, that is a story for
                 another time).
                 Luckily, I was allowed to work while my residency application was in process because I am married to an
                 EU Citizen.
@@ -431,7 +424,7 @@
                 the ad stated. I
                 thought, why not try it. I signed up for the free webinar and loved it. Of course, my husband said, “I
                 knew you would
-                love it. You should have listened to me when I told you to take-up coding years ago!” Ha ha ha! He was
+                love it. You should have listened to me when I told you to take up coding years ago!” Ha ha ha! He was
                 not wrong.
             </p>
             <p>
@@ -439,7 +432,17 @@
                 until I achieved the Frontend Developer Certification.
             </p>
             <p>
-                Along the way I built a Weather app, Dictionary app, Travel apps, World clock and much more.
+                Along the way, I built a Weather app, Dictionary app, Travel app, World clock, and much more.
+            <p>
+                Now, my husband and I are starting our business, called <a class="sheCodes-link"
+                    href="https://www.threegloves.com/" title="Link to Three Gloves" target="_blank">
+                    Three Gloves</a>, designing and building websites. We are web designers & developers specialising in
+                building rich digital experiences. We combine deep technical knowledge
+                with a sense of design to create impressive visual works featuring interactivity and animation. We build
+                websites which
+                are both beautiful, accessible and simple to maintain. We empower small businesses to grow, using state
+                of the art digital solutions.
+            </p>
             </p>
             </di>
             <div class="parallax-grid">
@@ -469,25 +472,25 @@
                     </a>
                 </div>
             </div>
-            <div class="container-fluid">
-                <p>
-                    My message to Matt Delac and the SheCodes Team, “I started my coding journey on 8 August 2022. It
-                    has been almost one
-                    year of learning and growing, and it's been one of the most fulfilling experiences of my life. Matt
-                    Delac and his
-                    SheCodes team have been wonderfully supportive. Thank you, Matt, for starting your company and
-                    helping over 180,000 students
-                    (as of today)learn to code. I am happy to be one of the many women from 191 countries who have
-                    learned from you and your
-                    team. I already have freelance work coding, and I hope to work for a company soon. For anyone hoping
-                    to take their
-                    career in a new direction, I highly recommend learning to code with SheCodes. The SheCodes Max (with
-                    all the add-ons)
-                    will give you all the skills and tools to launch a new career as a Frontend Developer. Thank you
-                    again to Matt Delac and
-                    the SheCodes Team!!”
-                </p>
-            </div>
+
+            <p class="mb-5">
+                My message to Matt Delac and the SheCodes Team, “I started my coding journey on 8 August 2022. It
+                has been almost one
+                year of learning and growing, and it's been one of the most fulfilling experiences of my life. Matt
+                Delac and his
+                SheCodes team have been wonderfully supportive. Thank you, Matt, for starting your company and
+                helping over 180,000 students
+                (as of today)learn to code. I am happy to be one of the many women from 191 countries who have
+                learned from you and your
+                team. I already have freelance work coding, and I hope to work for a company soon. For anyone hoping
+                to take their
+                career in a new direction, I highly recommend learning to code with SheCodes. The SheCodes Max (with
+                all the add-ons)
+                will give you all the skills and tools to launch a new career as a front-end developer. Thank you
+                again to Matt Delac and
+                the SheCodes Team!!”
+            </p>
+
         </div>
     </div>
     <footer>
