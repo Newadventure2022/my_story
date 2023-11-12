@@ -23,7 +23,7 @@
             --primary-color: #1a2743;
             --secondary-color: #000;
             --third-color: #fff;
-            --fourth-color: #1b5f1a;
+            --fourth-color: #f19af5;
             --text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
         }
 
@@ -121,7 +121,7 @@
 
         .celia-parallax {
             background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/643/original/Serrano_Torres.jpg?1698930519) no-repeat center;
-            background-size: 70%;
+            background-size: 80%;
             background-attachment: fixed;
             background-clip: content-box;
             height: 70vh;
@@ -136,6 +136,13 @@
         }
 
         .celia-parallax-2 {
+            background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/786/original/map-3.jpeg?1699823146) no-repeat center;
+            background-size: 90%;
+            background-attachment: fixed;
+            height: 55vh;
+        }
+
+        .celia-parallax-3 {
             background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/646/original/Front_end_Certificate.jpeg?1698930654) no-repeat center;
             background-size: 70%;
             background-attachment: fixed;
@@ -192,8 +199,39 @@
             font-weight: 600;
         }
 
+        .fun-code h2 {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 7vw;
+            line-height: 1;
+            margin-top: 20px;
+            color: #e562f4;
+            font-weight: 900;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #ccc;
+            text-shadow: 0px 0px 0px #ff3ea5ff, 0px 0px 0px #edff00ff,
+                0px 0px 0px #00a4ccff;
+            animation: animate 7s linear infinite;
+            margin: 2rem 0;
+            transition: 0.2s all ease-in-out;
+        }
+
+        .fun-code h2:hover {
+            text-shadow: 3px 7px 0px #ff3ea5ff, 6px 14px 0px #edff00ff,
+                9px 21px 0px #00a4ccff;
+        }
+
+        @keyframes animate {
+            0% {
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        .fun-code a {
+            text-decoration: none !important;
+        }
+
         .sheCodes-link {
-            color: #f19af5;
+            color: var(--fourth-color);
             text-decoration: none;
             transition: all 100ms ease-in-out;
         }
@@ -371,9 +409,10 @@
             <p class="mb-5">
                 We decided to leave California on August 16, 2021. We sold almost everything we owned, gave tons of
                 stuff away
-                (including my Volkswagen Beetle to my mother), and said our goodbyes to our dear friends.
+                (including my Volkswagen Beetle to my mother), and said our goodbyes to our dear family and friends.
 
                 We arrived in Madrid on August 17, 2020. We could not believe we actually did it! We moved to Spain!!!!
+                Olé! 🇪🇸
             </p>
         </div>
         <div class="parallax-grid">
@@ -385,14 +424,14 @@
             </div>
             <div class="parallax-box-2"><img class="image-fluid pb-3"
                     src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/049/original/mama.jpeg?1699185666"
-                    alt="Celia's Portfolio" title="CELIA'S WEBSITE">
+                    alt="Celia's Portfolio" title="My Mom Alice">
                 <p class="grid-photos">
                     My Mom
                 </p>
             </div>
             <div class="parallax-box-3"><img class="image-fluid pb-3"
                     src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/050/original/last-photo2.jpeg?1699185751"
-                    alt="Research" title="THE GLOVES">
+                    alt="Research" title="Dear friends seeing us off at the airport">
                 <p class="grid-photos">
                     Dear Friends
                 </p>
@@ -400,21 +439,27 @@
         </div>
         <div class="container-fluid">
             <p>
-                After a few weeks of getting settled and finding a new apartment to live it was time to get to business.
+                After a few weeks of getting settled and finding a new apartment it was time to get to business.
                 I needed to get
-                my Spanish Residency to work. The process took over two years (again, that is a story for
+                my Spanish Residency and permission to work. The residency process took over two years (again, that is a
+                story for
                 another time).
                 Luckily, I was allowed to work while my residency application was in process because I am married to an
                 EU Citizen.
             </p>
             <p>
-                Long story short, I was hired at an academy teaching English. It was quite the experience, and although
-                there were
-                aspects that I did enjoy about the job, I knew that teaching wasn’t my passion.
+                Long story short, I was hired at an academy teaching English. My first year was quite the experience,
+                and although
+                there are aspects that I enjoy about teaching, I have come to terms with the fact that teaching English
+                isn’t my passion.
             </p>
         </div>
         <div class="container-fluid">
-            <h2>How I found coding:</h2>
+            <div class="fun-code">
+                <a href>
+                    <h2>I Code Because It's Fun!</h2>
+                </a>
+            </div>
             <p class="mt-5">
                 I saw an advert for <a class="sheCodes-link" href="https://www.shecodes.io" title="Link to SheCodes.io"
                     target="_blank">
@@ -434,7 +479,8 @@
                 I signed up for more lessons after taking the free course, and little by little, I completed each course
                 until I achieved the Frontend Developer Certification.
             </p>
-            <p>
+            <div class="celia-parallax-3"></div>
+            <p class="pt-5">
                 Along the way, I built a Weather app, Dictionary app, Travel app, World clock, and much more.
             <p>
                 Now, my husband and I are starting our business, called <a class="sheCodes-link"
@@ -489,7 +535,7 @@
                 Delac and his
                 SheCodes team have been wonderfully supportive. Thank you, Matt, for starting your company and
                 helping over 180,000 students
-                (as of today)learn to code. I am happy to be one of the many women from 191 countries who have
+                (as of today) learn to code. I am happy to be one of the many women from 191 countries who have
                 learned to code from you and your
                 team. I already have freelance work building a couple of websites, and I hope to work for a company
                 soon. For anyone hoping
