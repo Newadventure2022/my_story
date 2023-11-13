@@ -43,10 +43,6 @@
             margin: 0 auto;
         }
 
-        body,
-        html {
-            height: 100%;
-        }
 
         h1,
         h2,
@@ -80,9 +76,8 @@
             padding: 2rem 0;
         }
 
-        .container-fluid {
-            max-width: 1000px;
-            overflow-x: hidden;
+        .container {
+            max-width: 980px;
             margin: 0 auto;
             background-color: var(--primary-color);
 
@@ -97,7 +92,7 @@
             text-shadow: var(--text-shadow);
             color: var(--third-color);
             font-size: 5rem;
-            padding-left: 2rem;
+            padding-left: 3rem;
             text-align: left;
             animation: animate_title 4s linear;
         }
@@ -126,7 +121,7 @@
 
         .celia-parallax {
             background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/643/original/Serrano_Torres.jpg?1698930519) no-repeat center;
-            background-size: 80%;
+            background-size: 70%;
             background-attachment: fixed;
             background-clip: content-box;
             height: 70vh;
@@ -142,8 +137,9 @@
 
         .celia-parallax-2 {
             background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/786/original/map-3.jpeg?1699823146) no-repeat center;
-            background-size: 90%;
+            background-size: 70%;
             background-attachment: fixed;
+            background-clip: content-box;
             height: 55vh;
 
         }
@@ -296,7 +292,7 @@
 
         @media (max-width: 787px) {
             .parallax-grid {
-                display: hidden;
+
                 background: none;
             }
         }
@@ -306,31 +302,30 @@
                 font-size: 2rem;
             }
 
-            .container-fluid {
+            .container {
                 padding: 0 1rem;
             }
 
             .parallax-grid {
                 display: grid;
                 grid-template-columns: 1fr;
+                margin: 1rem;
                 padding-top: 0;
             }
 
-            .celia-parallax {
+            .celia-parallax,
+            .celia-parallax-2,
+            .celia-parallax-3 {
                 background-size: 100%;
-                background-attachment: fixed;
-                height: 50vh;
-                padding: 0;
+                background-attachment: scroll;
+
             }
 
             .celia-parallax h1 {
                 font-size: 3rem;
             }
 
-            .celia-parallax-2 {
-                background-attachment: scroll;
-                height: 50vh;
-            }
+
 
             .lines {
                 margin: 0;
@@ -343,15 +338,12 @@
                 grid-template-columns: 1fr;
             }
 
-            .celia-parallax {
-                background-size: 100%;
-            }
         }
     </style>
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <h2>My Coding Journey</h2>
         <h3>by</h3>
         <div id="parallax-container">
@@ -383,7 +375,7 @@
         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/641/original/lines.jpeg?1698929127"
             alt="lines">
     </section>
-    <div class="container-fluid">
+    <div class="container">
         <p class="mt-5">One day James and I were talking about how we needed to make a change. We decided we would move
             to Spain. We
             had
@@ -404,9 +396,9 @@
             dogs. Moving
             abroad with dogs is no easy task. That will be a story for another time.
         </p>
-    </div>
-    <div class="celia-parallax-2"></div>
-    <div class="container-fluid">
+
+        <div class="celia-parallax-2"></div>
+
         <div>
             <p class="mt-5">
                 I cannot remember the day I saw the news, but it said that on June 7, 2021, Spain would allow people to
@@ -443,7 +435,7 @@
                 </p>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container">
             <p>
                 After a few weeks of getting settled and finding a new apartment it was time to get to business.
                 I needed to get
@@ -460,7 +452,7 @@
                 beautiful things. It's a win-win!
             </p>
         </div>
-        <div class="container-fluid">
+        <div class="container">
             <div class="fun-code">
                 <a href>
                     <h2>Coding Is Fun! <i class="fa-solid fa-laptop-code fa-fade"
@@ -530,7 +522,7 @@
                 </div>
             </div>
 
-            <p class="mb-5">
+            <p class="mb-5 mt-4">
                 My message to <a class="sheCodes-link" href="https://www.linkedin.com/in/mattdelac/"
                     title="Link to Matthieu Delac's LinkedIn" target="_blank">
                     Matt Delac
