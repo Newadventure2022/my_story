@@ -88,13 +88,17 @@
 
         }
 
-        .parallax-section {
+        .parallax-section,
+        .parallax-section-2,
+        .parallax-section-3 {
             position: relative;
             width: 100%;
             height: 90vh;
         }
 
-        .parallax-child-section {
+        .parallax-child-section,
+        .parallax-child-section-2,
+        .parallax-child-section-3 {
             clip: rect(0, auto, auto, 0);
             position: absolute;
             top: 0;
@@ -103,13 +107,15 @@
             height: 120vh;
         }
 
-        #frontlashID {
+        #frontlashID,
+        #frontlashID-2,
+        #frontlashID-3 {
             position: fixed;
             display: block;
             top: 10rem;
             left: 0;
             width: 100%;
-            height: 100%;
+            height: 70%;
             transform: translateZ(0);
             will-change: transform;
             z-index: 1;
@@ -120,10 +126,28 @@
             background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/643/original/Serrano_Torres.jpg?1698930519);
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: 80%;
         }
 
-        #parallax-container {
+        .fw-main-row-2 {
+            background-attachment: scroll;
+            background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/786/original/map-3.jpeg?1699823146);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 80%;
+        }
+
+        .fw-main-row-3 {
+            background-attachment: scroll;
+            background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/646/original/Front_end_Certificate.jpeg?1698930654);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 80%;
+        }
+
+        #parallax-container,
+        #parallax-container-2,
+        #parallax-container-3 {
             max-width: 100%;
             margin: 0 auto;
         }
@@ -172,22 +196,6 @@
 
         .pets img {
             max-height: 370px;
-        }
-
-        .celia-parallax-2 {
-            background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/786/original/map-3.jpeg?1699823146) no-repeat center;
-            background-size: 70%;
-            background-attachment: fixed;
-            background-clip: content-box;
-            height: 55vh;
-
-        }
-
-        .celia-parallax-3 {
-            background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/646/original/Front_end_Certificate.jpeg?1698930654) no-repeat center;
-            background-size: 70%;
-            background-attachment: fixed;
-            height: 70vh;
         }
 
         .parallax-grid,
@@ -489,17 +497,21 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/039/origina
             </div>
         </div>
     </div>
-    <div class="celia-parallax-2">
-        <div id="parallax-container-2">
-            <div class="parallax-section-2">
-                <div class="parallax-child-section-2">
-                    <section class="fw-main-row-2" id="frontlashID-2">
-                    </section>
+    <div class="container">
+        <div class="celia-parallax-2">
+            <div id="parallax-container-2">
+                <div class="parallax-section-2">
+                    <div class="parallax-child-section-2">
+                        <section class="fw-main-row-2" id="frontlashID-2">
+                        </section>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <section class="empty">
+        <span>the empty area</span>
+    </section>
     <div>
         <p class="mt-5">
             I cannot remember the day I saw the news, but it said that on June 7, 2021, Spain would allow people to
@@ -590,6 +602,9 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/039/origina
             </div>
         </div>
     </div>
+    <section class="empty">
+        <span>the empty area</span>
+    </section>
     <p class="pt-5">
         Along the way, I built a Weather app, Dictionary app, Travel app, World clock, and much more.
     <p>
