@@ -190,7 +190,8 @@
             height: 70vh;
         }
 
-        .parallax-grid {
+        .parallax-grid,
+        .parallax-grid-2 {
             color: var(--third-color);
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -202,13 +203,7 @@
         }
 
         .parallax-grid-2 {
-            color: var(--third-color);
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            max-width: 100%;
-            margin: 3rem;
-            text-align: center;
+            padding: 0;
         }
 
         .parallax-links {
@@ -340,8 +335,9 @@
         }
 
         @media (max-width: 787px) {
-            .parallax-grid {
 
+            .parallax-grid,
+            .parallax-grid-2 {
                 background: none;
             }
         }
@@ -355,18 +351,20 @@
                 padding: 0 1rem;
             }
 
-            .parallax-grid {
+            .parallax-grid,
+            .parallax-grid-2 {
                 display: grid;
                 grid-template-columns: 1fr;
-                margin: 1rem;
+                margin: 5rem;
                 padding-top: 0;
+
             }
 
             .celia-parallax,
             .celia-parallax-2,
             .celia-parallax-3 {
                 background-size: 100%;
-                background-attachment: scroll;
+
             }
 
             .celia-parallax-2,
@@ -380,7 +378,7 @@
 
             .fun-code h2 {
                 font-size: 8vw;
-                text-align: left;
+                text-align: center;
 
             }
 
@@ -391,7 +389,9 @@
         }
 
         @media (max-width: 390px) {
-            .parallax-grid {
+
+            .parallax-grid,
+            .parallax-grid-2 {
                 display: grid;
                 grid-template-columns: 1fr;
             }
@@ -489,7 +489,16 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/039/origina
             </div>
         </div>
     </div>
-    <div class="celia-parallax-2"></div>
+    <div class="celia-parallax-2">
+        <div id="parallax-container-2">
+            <div class="parallax-section-2">
+                <div class="parallax-child-section-2">
+                    <section class="fw-main-row-2" id="frontlashID-2">
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div>
         <p class="mt-5">
@@ -571,7 +580,16 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/039/origina
         I signed up for more lessons after taking the free course, and little by little, I completed each course
         until I achieved the Frontend Developer Certification.
     </p>
-    <div class="celia-parallax-3"></div>
+    <div class="celia-parallax-3">
+        <div id="parallax-container-3">
+            <div class="parallax-section-3">
+                <div class="parallax-child-section-3">
+                    <section class="fw-main-row-3" id="frontlashID-3">
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
     <p class="pt-5">
         Along the way, I built a Weather app, Dictionary app, Travel app, World clock, and much more.
     <p>
