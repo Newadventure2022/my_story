@@ -52,7 +52,7 @@
         }
 
         h2 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin-top: 3rem;
         }
 
@@ -77,6 +77,7 @@
         }
 
         .container {
+            border: solid white 3px;
             max-width: 980px;
             margin: 0 auto;
             background-color: var(--primary-color);
@@ -163,7 +164,7 @@
         .celia-parallax h1 {
             text-shadow: var(--text-shadow);
             color: var(--third-color);
-            font-size: 4rem;
+            font-size: calc(4vw + 4vh + 2vmin);
             text-align: center;
             animation: animate_title 3s linear;
         }
@@ -180,11 +181,11 @@
             }
 
             95% {
-                margin-right: -50px;
+                margin-bottom: -50px;
             }
 
             100% {
-                margin-right: -50px;
+                margin-bottom: -50px;
             }
         }
 
@@ -344,28 +345,42 @@
             font-size: 24px;
         }
 
-        @media (max-width: 787px) {
+        @media (max-width: 880px) {
+            .parallax-links {
+                font-size: 1rem;
+            }
+        }
 
-            .parallax-grid,
-            .parallax-grid-2 {
-                background: none;
+        @media (max-width: 787px) {
+            .celia-parallax {
+                font-size: 3rem;
+            }
+
+            .parallax-links {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .celia-parallax {
+                font-size: 2rem;
+            }
+
+            .parallax-links {
+                font-size: 12px;
             }
         }
 
         @media (max-width: 500px) {
-            h2 {
-                font-size: 2rem;
-            }
-
-            .container {
-                padding: 0 1rem;
+            .celia-parallax {
+                font-size: 1rem;
             }
 
             .parallax-grid,
             .parallax-grid-2 {
+                font-size: 12px;
                 display: grid;
                 grid-template-columns: 1fr;
-                margin: 5rem;
                 padding-top: 0;
             }
 
@@ -380,10 +395,6 @@
                 padding: 0;
             }
 
-            .celia-parallax h1 {
-                font-size: 3rem;
-            }
-
             .fun-code h2 {
                 font-size: 8vw;
                 text-align: center;
@@ -392,16 +403,6 @@
             .lines {
                 margin: 0;
             }
-        }
-
-        @media (max-width: 390px) {
-
-            .parallax-grid,
-            .parallax-grid-2 {
-                display: grid;
-                grid-template-columns: 1fr;
-            }
-
         }
     </style>
 </head>
@@ -471,28 +472,23 @@
         dogs. Moving
         abroad with dogs is no easy task. That will be a story for another time.
     </p>
-    <div class="pets">
-        <div class="parallax-grid">
+    <div class="container">
+        <div class="parallax-grid pb-3">
             <div class="parallax-box-7"><img class="image-fluid"
-                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/033/original/Peppy___Knuckles_1.JPG?1669991430"
-                    alt="Celia's Certificate" title="Knuckles & Peppy">
-                <p class="grid-photos">Knuckles and Peppy</p>
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/436/original/Peppy-backpack.jpeg?1702042941"
+                    alt="Research" title="Peppy Traveling by Bus">
 
             </div>
-            <div class="parallax-box-8"><img class="image-fluid" src="
-https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/039/original/Knuckles_Backpack_1.jpeg?1669991523"
-                    alt="Celia's Portfolio" title="Knuckles Traveling by Bus">
-                <p class="grid-photos">
-                    Knuckles Traveling
-                </p>
+            <div class="parallax-box-8"><img class="image-fluid"
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/439/original/knuckles-peppy.jpg?1702043485"
+                    alt="Celia's Certificate" title="Knuckles & Peppy">
             </div>
             <div class="parallax-box-9"><img class="image-fluid"
-                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/038/original/Peppy_Backpack_1.jpeg?1669991501"
-                    alt="Research" title="Peppy Traveling by Bus">
-                <p class="grid-photos">
-                    Peppy Traveling
-                </p>
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/434/original/knuckles-backpack.jpeg?1702042910"
+                    alt="Celia's Portfolio" title="Knuckles Traveling by Bus">
+
             </div>
+
         </div>
     </div>
     <div class="container">
@@ -521,30 +517,26 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/039/origina
             Olé! 🇪🇸
         </p>
     </section>
+    <div class="container">
+        <div class="parallax-grid">
+            <div class="parallax-box-1"><img class="image-fluid pb-3"
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/048/original/trader-joes.jpg?1699185658"
+                    alt="Celia's Certificate" title="Celia, Sandy, & Shannon">
 
-    <div class="parallax-grid">
-        <div class="parallax-box-1"><img class="image-fluid pb-3"
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/048/original/trader-joes.jpg?1699185658"
-                alt="Celia's Certificate" title="Celia, Sandy, & Shannon">
-            <p class="grid-photos"> Trader Joe's Mates </p>
 
-        </div>
-        <div class="parallax-box-2"><img class="image-fluid pb-3"
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/049/original/mama.jpeg?1699185666"
-                alt="Celia's Portfolio" title="My Mom Alice">
-            <p class="grid-photos">
-                My Mom
-            </p>
-        </div>
-        <div class="parallax-box-3"><img class="image-fluid pb-3"
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/050/original/last-photo2.jpeg?1699185751"
-                alt="Research" title="Dear friends seeing us off at the airport">
-            <p class="grid-photos">
-                Dear Friends
-            </p>
+            </div>
+            <div class="parallax-box-2"><img class="image-fluid pb-3"
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/049/original/mama.jpeg?1699185666"
+                    alt="Celia's Portfolio" title="My Mom Alice">
+
+            </div>
+            <div class="parallax-box-3"><img class="image-fluid pb-3"
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/050/original/last-photo2.jpeg?1699185751"
+                    alt="Research" title="Dear friends seeing us off at the airport">
+
+            </div>
         </div>
     </div>
-
     <p>
         After a few weeks of getting settled and finding a new apartment it was time to get to business.
         I needed to get
