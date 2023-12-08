@@ -51,10 +51,6 @@
             text-align: center;
         }
 
-        h1 {
-            margin-top: 1.5rem;
-        }
-
         h2 {
             font-size: 3rem;
             margin-top: 3rem;
@@ -84,8 +80,6 @@
             max-width: 980px;
             margin: 0 auto;
             background-color: var(--primary-color);
-
-
         }
 
         .parallax-section,
@@ -104,7 +98,16 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 120vh;
+            height: 90vh;
+        }
+
+        #frontlashID {
+            top: 7rem;
+        }
+
+        #frontlashID-2,
+        #frontlashID-3 {
+            top: 1rem;
         }
 
         #frontlashID,
@@ -112,10 +115,9 @@
         #frontlashID-3 {
             position: fixed;
             display: block;
-            top: 10rem;
             left: 0;
             width: 100%;
-            height: 70%;
+            height: 100%;
             transform: translateZ(0);
             will-change: transform;
             z-index: 1;
@@ -157,28 +159,26 @@
             color: var(--third-color);
             font-size: 4rem;
             text-align: center;
-            animation: animate_title 4s linear;
+            animation: animate_title 3s linear;
         }
 
         @keyframes animate_title {
             0% {
-                margin-bottom: -50px;
-                letter-spacing: 100px;
+                letter-spacing: 20px;
                 color: var(--primary-color);
             }
 
             50% {
-                margin-bottom: -50px;
                 letter-spacing: 1px;
                 color: var(--third-color);
             }
 
             95% {
-                margin-bottom: -50px;
+                margin-right: -50px;
             }
 
             100% {
-                margin-bottom: -50px;
+                margin-right: -50px;
             }
         }
 
@@ -203,10 +203,10 @@
             color: var(--third-color);
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
+            gap: 1rem;
             max-width: 100%;
-            margin: 3rem;
-            padding-top: 3rem;
+            margin: 0 5rem;
+            padding-top: 1rem;
             text-align: center;
         }
 
@@ -365,14 +365,12 @@
                 grid-template-columns: 1fr;
                 margin: 5rem;
                 padding-top: 0;
-
             }
 
             .celia-parallax,
             .celia-parallax-2,
             .celia-parallax-3 {
                 background-size: 100%;
-
             }
 
             .celia-parallax-2,
@@ -387,9 +385,7 @@
             .fun-code h2 {
                 font-size: 8vw;
                 text-align: center;
-
             }
-
 
             .lines {
                 margin: 0;
@@ -411,15 +407,15 @@
 <body>
     <div class="container">
         <h2>My Coding Journey</h2>
-        <h3 class="mt-1 mb-1">by</h3>
+        <h3 class="mt-1">by</h3>
+        <div class="celia-parallax" title="Serrano Torres, Valencia, Spain">
+            <h1 class="greeting mb-5">Celia Corona-Doran
+            </h1>
+        </div>
         <div id="parallax-container">
             <div class="parallax-section">
                 <div class="parallax-child-section">
                     <section class="fw-main-row" id="frontlashID">
-                        <div class="celia-parallax" title="Serrano Torres, Valencia, Spain">
-                            <h1 class="greeting">Celia <div>Corona-Doran</div>
-                            </h1>
-                        </div>
                     </section>
                 </div>
             </div>
@@ -427,27 +423,28 @@
     </div>
     <section class="empty">
         <span>the empty area</span>
+        <div class="parallax-paragraghs mt-5">
+            <p class="mt-5">I was a manager at <a class="traderJoes-link" href="https://www.shecodes.io"
+                    title="Link to Trader Joe's" target="_blank">
+                    Trader Joe’s</a>, a popular grocery store in the USA. It was a good job, but I
+                wanted to do
+                something more
+                fulfilling. I wanted to build a career. My husband James kept telling me I should try coding because I
+                have the brain
+                for it. I did not consider it because I was already studying to get a degree in Business Management, and
+                I
+                was working
+                full-time at Trader Joe’s.</p>
+            <p class="mb-5">When the pandemic hit California in 2020, everything changed. Working at Trader Joe’s was
+                extremely
+                stressful. While
+                many people were allowed to work from home, that option was not available for me as a store manager. I
+                had
+                to go in five
+                days a week and deal with the concerns of the customers and crew.</p>
+        </div>
     </section>
-    <div class="parallax-paragraghs mt-5">
-        <p class="mt-5">I was a manager at <a class="traderJoes-link" href="https://www.shecodes.io"
-                title="Link to Trader Joe's" target="_blank">
-                Trader Joe’s</a>, a popular grocery store in the USA. It was a good job, but I
-            wanted to do
-            something more
-            fulfilling. I wanted to build a career. My husband James kept telling me I should try coding because I
-            have the brain
-            for it. I did not consider it because I was already studying to get a degree in Business Management, and
-            I
-            was working
-            full-time at Trader Joe’s.</p>
-        <p class="mb-5">When the pandemic hit California in 2020, everything changed. Working at Trader Joe’s was
-            extremely
-            stressful. While
-            many people were allowed to work from home, that option was not available for me as a store manager. I
-            had
-            to go in five
-            days a week and deal with the concerns of the customers and crew.</p>
-    </div>
+
     <section class="lines">
         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/641/original/lines.jpeg?1698929127"
             alt="lines">
@@ -511,8 +508,6 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/039/origina
     </div>
     <section class="empty">
         <span>the empty area</span>
-    </section>
-    <div>
         <p class="mt-5">
             I cannot remember the day I saw the news, but it said that on June 7, 2021, Spain would allow people to
             enter Spain!! That was the sign I was looking for since my birthday is on June 7th.
@@ -525,7 +520,8 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/039/origina
             We arrived in Madrid on August 17, 2021. We could not believe we actually did it! We moved to Spain!!!!
             Olé! 🇪🇸
         </p>
-    </div>
+    </section>
+
     <div class="parallax-grid">
         <div class="parallax-box-1"><img class="image-fluid pb-3"
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/048/original/trader-joes.jpg?1699185658"
@@ -604,21 +600,20 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/039/origina
     </div>
     <section class="empty">
         <span>the empty area</span>
+        <p class="pt-5">
+            Along the way, I built a Weather app, Dictionary app, Travel app, World clock, and much more.
+        <p>
+            Now, my husband and I are starting our business, called <a class="sheCodes-link"
+                href="https://www.threegloves.com/" title="Link to Three Gloves" target="_blank">
+                Three Gloves</a>, designing and building websites. We are web designers & developers specialising in
+            building rich digital experiences. We combine deep technical knowledge
+            with a sense of design to create impressive visual works featuring interactivity and animation. We build
+            websites which
+            are both beautiful, accessible and simple to maintain. We empower small businesses to grow, using state
+            of the art digital solutions.
+        </p>
+        </p>
     </section>
-    <p class="pt-5">
-        Along the way, I built a Weather app, Dictionary app, Travel app, World clock, and much more.
-    <p>
-        Now, my husband and I are starting our business, called <a class="sheCodes-link"
-            href="https://www.threegloves.com/" title="Link to Three Gloves" target="_blank">
-            Three Gloves</a>, designing and building websites. We are web designers & developers specialising in
-        building rich digital experiences. We combine deep technical knowledge
-        with a sense of design to create impressive visual works featuring interactivity and animation. We build
-        websites which
-        are both beautiful, accessible and simple to maintain. We empower small businesses to grow, using state
-        of the art digital solutions.
-    </p>
-    </p>
-
     <div class="parallax-grid-2">
         <div class="parallax-box-4"><img class="pb-4 pt-3"
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/945/original/shecode-celia.jpeg?1699109628"
